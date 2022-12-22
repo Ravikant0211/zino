@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Stack from "./components/Stack";
+import "./App.css";
+
+// const initialCardsState = [
+//   { id: "red", clrName: "Red" },
+//   { id: "blue", clrName: "Blue" },
+//   { id: "green", clrName: "Green" },
+//   { id: "black", clrName: "Black" },
+// ];
 
 function App() {
+  // const [cardState, setCardState] = useState(initialCardsState);
+
+  // const setCardStateHandler = () => {};
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="stacks">
+        <Stack
+          id="red"
+          clrName="Red"
+          // cardState={cardState}
+          // setCardState={setCardStateHandler}
+        />
+        <Stack
+          id="green"
+          clrName="Green"
+          // cardState={cardState}
+          // setCardState={setCardStateHandler}
+        />
+        <Stack
+          id="blue"
+          clrName="Blue"
+          // cardState={cardState}
+          // setCardState={setCardStateHandler}
+        />
+        <Stack
+          id="black"
+          clrName="Black"
+          // cardState={cardState}
+          // setCardState={setCardStateHandler}
+        />
+      </div>
     </div>
   );
 }
